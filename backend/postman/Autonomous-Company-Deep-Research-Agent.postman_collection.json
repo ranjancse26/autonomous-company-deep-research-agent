@@ -1,0 +1,501 @@
+{
+	"info": {
+		"_postman_id": "7a1b2c3d-4e5f-6789-0123-456789abcdef",
+		"name": "Autonomous Company Deep Research Agent",
+		"description": "API collection for the Autonomous Company Deep Research Agent - an AI-powered system for automated company research",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"version": "1.0.0"
+	},
+	"item": [
+		{
+			"name": "System Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						""
+					]
+				},
+				"description": "Check if the research agent system is running and available"
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Deep Research Agent running\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Company Research",
+			"item": [
+				{
+					"name": "Analyze Tech Company (Microsoft)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"query\": \"Analyze company Microsoft\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/research",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"research"
+							]
+						},
+						"description": "Get comprehensive research on Microsoft, including company background, financial performance, competitors, and market analysis"
+					},
+					"response": []
+				},
+				{
+					"name": "Analyze Startup (Cursor AI)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"query\": \"Analyze startup Cursor AI\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/research",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"research"
+							]
+						},
+						"description": "Research Cursor AI, an AI-assisted code editor. Get information on features, founders, competitors, and market potential"
+					},
+					"response": []
+				},
+				{
+					"name": "Analyze E-commerce Platform (Shopify)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"query\": \"Analyze company Shopify\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/research",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"research"
+							]
+						},
+						"description": "Comprehensive analysis of Shopify's e-commerce platform, including business model, market share, competitors, and growth opportunities"
+					},
+					"response": []
+				},
+				{
+					"name": "Analyze Payment Processor (Stripe)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"query\": \"Analyze company Stripe\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/research",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"research"
+							]
+						},
+						"description": "Research Stripe's payment processing platform. Includes information on services, revenue model, competitors, and market position"
+					},
+					"response": []
+				},
+				{
+					"name": "Analyze AI Research Lab (OpenAI)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"query\": \"Analyze startup OpenAI\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/research",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"research"
+							]
+						},
+						"description": "Deep dive into OpenAI's research, products like GPT-4, funding, leadership, and impact on the AI industry"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Industry-Specific Research",
+			"item": [
+				{
+					"name": "Analyze EV Startup (Rivian)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"query\": \"Analyze electric vehicle startup Rivian\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/research",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"research"
+							]
+						},
+						"description": "Research Rivian's electric vehicle business, including product lineup, production status, market competition, and sustainability efforts"
+					},
+					"response": []
+				},
+				{
+					"name": "Analyze Biotech Startup (Moderna)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"query\": \"Analyze biotech company Moderna\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/research",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"research"
+							]
+						},
+						"description": "Comprehensive analysis of Moderna's mRNA technology, COVID-19 vaccine, pipeline, financial performance, and biotech industry position"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Custom Query",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"query\": \"{{researchQuery}}\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/research",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"research"
+					]
+				},
+				"description": "Send a custom research query to the system. Replace {{researchQuery}} with your specific company or startup name"
+			},
+			"response": [			]
+		},
+		{
+			"name": "VC Report Generation",
+			"item": [
+				{
+					"name": "Generate VC Report (PDF)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"company\": \"Cursor AI\",\n    \"format\": \"pdf\",\n    \"country\": \"US\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/generate-vc-report",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"generate-vc-report"
+							]
+						},
+						"description": "Generate a VC-style diligence report in PDF format for Cursor AI"
+					},
+					"response": []
+				},
+				{
+					"name": "Generate VC Report (Markdown)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"company\": \"Stripe\",\n    \"format\": \"markdown\",\n    \"country\": \"UK\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/generate-vc-report",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"generate-vc-report"
+							]
+						},
+						"description": "Generate a VC-style diligence report in Markdown format for Stripe"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Specialized Research Endpoints",
+			"item": [
+				{
+					"name": "Competitor Detection (Stripe)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/startup/competitors?company=stripe",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"startup/competitors"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "stripe"
+								}
+							]
+						},
+						"description": "Get competitors for Stripe using specialized competitor detection endpoint"
+					},
+					"response": []
+				},
+				{
+					"name": "Founder Research (Stripe)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/company/founders?company=stripe",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"company/founders"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "stripe"
+								}
+							]
+						},
+						"description": "Get founder information for Stripe using specialized founder research endpoint"
+					},
+					"response": []
+				},
+				{
+					"name": "Hiring Signals (Stripe)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/company/hiring?company=stripe",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"company/hiring"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "stripe"
+								}
+							]
+						},
+						"description": "Get hiring signals for Stripe using specialized hiring signals endpoint"
+					},
+					"response": []
+				},
+				{
+					"name": "News Intelligence (Stripe)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/company/news?company=stripe",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"company/news"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "stripe"
+								}
+							]
+						},
+						"description": "Get news intelligence for Stripe using specialized news intelligence endpoint"
+					},
+					"response": []
+				},
+				{
+					"name": "Technology Stack (Stripe)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/company/technology?company=stripe",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"company/technology"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "stripe"
+								}
+							]
+						},
+						"description": "Get technology stack for Stripe using specialized technology stack endpoint"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8000",
+			"type": "string",
+			"description": "Base URL of the research agent API. Change this if your server is running on a different port or domain"
+		},
+		{
+			"key": "researchQuery",
+			"value": "Analyze company [Your Company Name]",
+			"type": "string",
+			"description": "Placeholder for custom research queries"
+		}
+	]
+}

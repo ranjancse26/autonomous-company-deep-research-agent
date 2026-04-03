@@ -1,0 +1,18 @@
+# Core dependencies
+fastapi
+uvicorn
+requests
+beautifulsoup4
+python-dotenv
+pydantic
+reportlab
+tiktoken
+
+# OpenAI (required for OpenAI provider)
+openai
+
+# Optional: Anthropic (install for Anthropic provider)
+# anthropic
+
+# Optional: Google Generative AI (install for Gemini provider)
+# google-generativeai
